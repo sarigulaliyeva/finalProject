@@ -15,6 +15,7 @@ const RecipeContainer = styled.div`
   padding: 10px;
   width: 300px;
   box-shadow: 0 3px 10px 0 #aaa;
+  text-align: center;
 `;
 const CoverImage = styled.img`
   object-fit: cover;
@@ -29,9 +30,10 @@ const RecipeName = styled.span`
   overflow: hidden;
   text-overflow: ellipsis;
   font-style: italic;
+  text-align: center;
 `;
 const SeeMoreText = styled.span`
-  background-color: #eb3300;
+  background-color: gray;
   font-size: 18px;
   text-align: center;
   border: solid 1px red;
@@ -156,6 +158,7 @@ const RecipeListContainer = styled.div`
   padding: 30px;
   gap: 20px;
   justify-content: space-evenly;
+
 `;
 const AppComponent = () => {
   const [searchQuery, updateSearchQuery] = useState("");
